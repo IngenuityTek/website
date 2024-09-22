@@ -1,0 +1,454 @@
+* {
+  font-family: "Instrument Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  background-color: rgb(22, 50, 66);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header a {
+  padding-inline: 15px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span.center {
+  text-align: center;
+}
+
+footer {
+  color: white;
+  padding-top: 10px;
+}
+
+input,
+textarea {
+  padding-top: 8px;
+  margin-top: 10px;
+  inline-size: 35dvw;
+  max-width: 500px;
+  min-width: 200px;
+  border: none;
+  outline: transparent none none;
+  border-radius: 5px;
+  text-indent: 5px;
+  font-size: 110%;
+}
+
+footer .message {
+  block-size: 120px;
+  text-wrap: wrap;
+  resize: none;
+}
+
+footer button {
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  outline: transparent none;
+  background-color: rgb(255, 178, 107);
+  inline-size: 35dvw;
+  max-inline-size: 100px;
+  min-inline-size: 10px;
+  padding: 10px;
+  font-size: medium;
+}
+
+footer button:hover,
+footer button:focus {
+  transition: 0.3s;
+  /* padding: 11px; */
+  background-color: #ffffff;
+}
+
+.menu{
+  display: none;
+}
+
+.menu-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.material-symbols-rounded {
+  color:white;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.contact-link{
+  background-color: rgb(75, 162, 227);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.relative-center {
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  align-content: center;
+}
+
+.item {
+  flex: 100%;
+  /* padding: 20px 10px;
+  margin: 5px; */
+}
+
+.base-text {
+  font-size: 130%;
+  margin: 0px 20px;
+}
+
+.intro-text {
+  font-size: calc(16px + 0.7dvw);
+  justify-content: start;
+  text-align: justify;
+  margin-right: 50px;
+  color: rgb(54 65 83);
+}
+
+.intro-heading {
+  font-size: calc(15px + 5.5dvw);
+  font-weight: 500;
+}
+
+.sub-heading {
+  font-size: calc(16px + 2dvw);
+}
+
+/* .parallax {
+  background-color: rgb(45, 93, 115);
+  background-blend-mode:lighten;
+  background-image: url("/assets/scott-rodgerson-PSpf_XgOM5w-unsplash.jpg");
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  padding-bottom: 15px;
+}
+
+.flex-item {
+  /* background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 1px 0px rgb(198, 198, 198); */
+  /* padding: 20px 10px;
+  margin: 5px; */
+  height: 500px;
+  width: 500px;
+}
+
+.flex-item-img {
+  text-align: center;
+}
+
+.flex-item-p {
+  text-align: justify;
+  text-wrap: wrap;
+}
+
+.repeater-img {
+  /* overflow: hidden; */
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+/* .arrow-button {
+  display:none;
+  border: none;
+  background: none;
+} */
+
+.material-icons {
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.company-info {
+  padding-left: 10dvb;
+}
+
+.copyright {
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  padding: 25px;
+}
+
+#color-logo {
+  width: 180px;
+  height: auto;
+  padding: 10px;
+}
+
+#quick-links {
+  text-align: right;
+  padding: 12px;
+  font-size: 28px;
+  align-content: center;
+  justify-content: flex-end;
+  flex: 100%;
+}
+
+#introduction {
+  /* background-image: url("/assets/patrick-tomasso-5eZu5p0vSPg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.72);
+  background-blend-mode: lighten; */
+  background: linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72)), url("/assets/images/patrick-tomasso-5eZu5p0vSPg-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  color: rgb(21, 49, 64);
+}
+
+#image-column {
+  text-align: center;
+  /* align-content: center; */
+  /* justify-content: center; */
+  vertical-align: auto;
+}
+
+#servers-image {
+  width: auto;
+  height: 55dvw;
+  transform: scale(0.9);
+  border-radius: 5%;
+}
+
+#services-container {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: rgb(45, 93, 115);
+  /* padding: 40px 0px; */
+}
+
+#slogan {
+  background-color: rgb(22, 50, 66);
+  color: white;
+  width: auto;
+  height: max-content;
+  padding: 64px 0px;
+}
+
+#about {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #c5c5c5;
+  padding-bottom: 2%;
+  color: rgb(22, 50, 66);
+}
+
+#color-logo-footer {
+  width: 50%;
+  max-width: 350px;
+  height: auto;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  * {
+    align-content: center;
+    text-align: center;
+    padding: unset;
+  }
+
+  header {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  header a {
+    display: flex;
+    text-align: center;
+    font-size: smaller;
+  }
+
+  input,
+  textarea {
+    text-align: justify;
+    inline-size: 70dvw;
+  }
+
+  .flex-hdr {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between
+  }
+
+  /* .flex-hdr-item{
+    justify-content: ;
+  } */
+
+  .header-logo {
+    justify-content: flex-start;
+  }
+
+  .menu{
+    display: contents;
+  }
+
+  .contact-link{
+    background-color: transparent;
+    padding: 0px;
+  }
+
+  .intro-text {
+    text-align: center;
+    margin-right: 0px;
+  }
+
+  .container {
+    flex-flow: column wrap;
+  }
+
+  .item {
+    flex: 100%;
+  }
+
+  .flex-container {
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: baseline;
+    text-align: center;
+  }
+
+  .flex-item {
+    flex: none;
+    /* width: 30dvw;
+    height: 25dvw; */
+    padding: 0px 0px 0px 0px;
+    /* margin: 5px; */
+    overflow: hidden;
+    background-color: #ffffff61;
+    border-radius: 10px;
+    box-shadow: 0px 2px 1px 0px rgb(198, 198, 198);
+  }
+
+  .flex-item-img {
+    /* position:relative;
+    overflow: hidden; */
+    /* transform: scale(0.7); */
+    display: none;
+  }
+
+  .flex-item-heading {
+    font-weight:bolder;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .tht {
+    display: none;
+  }
+
+  .flex-item-p {
+    display: none;
+  }
+
+  .repeater-img {
+    /* object-fit:fill; */
+        height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0; 
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .repeater-heading {
+    font-size: 10px;
+  }
+
+  .base-text {
+    font-size: medium;
+  }
+
+  /* .arrow-button {
+    display:contents;
+  } */
+
+  #color-logo {
+    width: 30dvw;
+    height: auto;
+    padding: 10px;
+  }
+
+  #quick-links{
+    display: none;
+    transition: all ease-in 1s;
+  }
+
+  #servers-image {
+    overflow: hidden;
+    transform: scale(1);
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 0px;
+    padding: 0px;
+  }
+
+  /* #services-container {
+    padding: 0px;
+  } */
+
+  .company-info {
+    padding-left: 0px;
+  }
+}
