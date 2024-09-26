@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#ffffff">
   <meta name="description"
     content="Ingenuity Technology Solutions is a premier engineering and IT services company base out of Santa Barbara, CA offering product development, project management, IT & cybersecurity, cloud & data services, system integrations, and training & support" />
   <title>Ingenuity Technology Solutions | Empowering Through Technology</title>
@@ -24,6 +23,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap">
   <script src="https://unpkg.com/htmx.org@2.0.2"></script>
+  <script src="/scripts/scripts.js"></script>
 </head>
 
 <body>
@@ -32,33 +32,38 @@
     <div class="flex-hdr">
       <div class="flex-hdr-item header-logo">
         <a href="#default">
-          <img id="color-logo" class="logo" src="/assets/icon/logo-color.svg">
+          <img class="logo-hdr" src="/assets/icon/logo-color.svg">
         </a>
       </div>
-      <div class="flex-hdr-item menu">
-        <button class="menu-btn"><span class="material-symbols-rounded">menu</span></button>
+      <div class="flex-hdr-item nav">
+        <button class="nav-btn" onclick="showDropdown('quick-links')"><span
+            class="material-symbols-rounded">menu</span></button>
       </div>
     </div>
     <div id="quick-links">
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
+      <a href="#services" class="page-link">Services</a>
+      <a href="#about" class="page-link">About</a>
       <a href="#contact" class="contact-link">Contact Us<a>
     </div>
   </header>
 
   <div id="introduction" section="#default" class="container">
-    <div id="image-column" class="item">
-      <img id="servers-image" src="/assets/images/matthieu-beaumont-iYnpYeyu57k-unsplash.jpg">
+    <div class="item image-column">
     </div>
     <div class="item">
+      <div class="logo">
+        <img class="intro-logo" src="/assets/icon/icon-black.svg">
+      </div>
       <h1 class="intro-heading">Empowering People Through Technology</h1>
       <div class="base-text">
         <p class="intro-text">
-          At Ingenuity Technology Solutions, we specialize in providing innovative engineering and
+          At Ingenuity Technology Solutions, we specialize in providing innovative Engineering and
           IT solutions custom-built for government and private sectors.
-          Our expert team is dedicated to enhancing operational efficiency through custom applications,
-          robust system designs, insightful data analytics, and comprehensive ITservices.
-          Partner with us to navigate the complexities of technology and drive your mission forward.</p>
+          <span class="tht">Our expert team is dedicated to enhancing operational efficiency through custom
+            applications,
+            robust system designs, insightful data analytics, and comprehensive IT services.
+            Partner with us to navigate the complexities of technology and drive your mission forward.</span>
+        </p>
       </div>
     </div>
   </div>
@@ -78,13 +83,13 @@
           </div>
           <div class="flex-item-heading">
             <span class="center">
+              <!-- <h2 class="repeater-heading">Cloud Services</h2> -->
               <h2 class="repeater-heading">Cloud<span class="tht"> Services</span></h2>
             </span>
           </div>
           <div>
           </div>
           <div class="flex-item-p">
-            <!-- <p>AWS, Azure, GCP, implementation. Cloud solutions architecture</p> -->
             <p class="repeater-p">Our cloud specialists optimize, manage, and scale digital infrastructure to foster
               team collaboration, incorporate flexibility, and maximize cost-efficiency.
               From cloud migrations to IaC, we got you covered.</p>
@@ -93,15 +98,17 @@
 
         <div class="flex-item">
           <div class="flex-item-img">
-            <img class="repeater-img" src="/assets/images/kvistholt-photography-oZPwn40zCK4-unsplash.jpg">
+            <img class="repeater-img"
+              src="https://images.unsplash.com/photo-1555952494-efd681c7e3f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwxMHx8YXBwbGljYXRpb24lMjBkZXZlbG9wbWVudHxlbnwwfDB8fHwxNzIzMjI5MDQ0fDA&ixlib=rb-4.0.3&q=80&w=1080">
           </div>
           <div class="flex-item-heading">
             <span class="center">
+              <!-- <h2 class="repeater-heading">Product Development</h2> -->
               <h2 class="repeater-heading"><span class="tht">Product </span>Development</h2>
             </span>
           </div>
           <div class="flex-item-p">
-            <p>We specialize in building custom applications tailored to meet the unique needs of
+            <p class="repeater-p">We specialize in building custom applications tailored to meet the unique needs of
               government entities and private corporations. Our team utilizes the latest technologies to ensure scalable
               and efficient solutions.</p>
           </div>
@@ -109,22 +116,26 @@
 
         <div class="flex-item">
           <div class="flex-item-img">
-            <img class="repeater-img" src="/assets/images/kvistholt-photography-oZPwn40zCK4-unsplash.jpg">
+            <img class="repeater-img"
+              src="https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyMDd8fGRhdGF8ZW58MHwwfHx8MTcyNTk3OTg2N3ww&ixlib=rb-4.0.3&q=80&w=1080">
           </div>
           <div class="flex-item-heading">
             <span class="center">
+              <!-- <h2 class="repeater-heading">Data Management</h2> -->
               <h2 class="repeater-heading">Data<span class="tht"> Management</span></h2>
             </span>
           </div>
           <div class="flex-item-p">
-            <p>Our professionals amplify traditional data solutions by designing, consolidating, and implementing
+            <p class="repeater-p">Our professionals amplify traditional data solutions by designing, consolidating, and
+              implementing
               every aspect of collection, retention and analytics.</p>
           </div>
         </div>
 
         <div class="flex-item">
           <div class="flex-item-img">
-            <img class="repeater-img" src="/assets/images/kvistholt-photography-oZPwn40zCK4-unsplash.jpg">
+            <img class="repeater-img"
+              src="https://images.unsplash.com/photo-1677078610588-aed2834ad968?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwxMHx8cHJvamVjdCUyMG1hbmFnZW1lbnR8ZW58MHwwfHx8MTcyMzIyOTA0NHww&ixlib=rb-4.0.3&q=80&w=1080">
           </div>
           <div class="flex-item-heading">
             <span class="center">
@@ -132,7 +143,8 @@
             </span>
           </div>
           <div class="flex-item-p">
-            <p>Our certified project managers bring expertise in navigating complex projects, ensuring
+            <p class="repeater-p">Our certified project managers bring expertise in navigating complex projects,
+              ensuring
               timely delivery and adherence to budget. We focus on clear communication and stakeholder engagement
               throughout the project lifecycle.</p>
           </div>
@@ -144,26 +156,28 @@
           </div>
           <div class="flex-item-heading">
             <span class="center">
+              <!-- <h2 class="repeater-heading">System Integrations</h2> -->
               <h2 class="repeater-heading"><span class="tht">System </span>Integrations</h2>
             </span>
           </div>
           <div class="flex-item-p">
-            <p>Seamlessly integrating new services and applications is challenging, time consuming, and
+            <p class="repeater-p">Seamlessly integrating new services and applications is challenging, time consuming,
+              and
               costly. Our solutions efficiently mesh services and simplify management of resources.</p>
           </div>
         </div>
 
         <div class="flex-item">
           <div class="flex-item-img">
-            <img class="repeater-img" src="/assets/images/kvistholt-photography-oZPwn40zCK4-unsplash.jpg">
+            <img class="repeater-img" src="/assets/images/markus-spiske-FXFz-sW0uwo-unsplash.jpg">
           </div>
           <div class="flex-item-heading">
             <span class="center">
-              <h2 class="repeater-heading">IT & CyberSec<span class="tht">urity</span></h2>
+              <h2 class="repeater-heading">IT</h2>
             </span>
           </div>
           <div class="flex-item-p">
-            <p>Our IT professionals protect sensitive data and systems from cyber threats, ensure
+            <p class="repeater-p">Our IT professionals protect sensitive data and systems from cyber threats, ensure
               government regulation compliance, and implement proactive measures to safeguard your digital assets and
               data.
             </p>
@@ -172,19 +186,40 @@
 
         <div class="flex-item">
           <div class="flex-item-img">
-            <img class="repeater-img" src="/assets/images/kvistholt-photography-oZPwn40zCK4-unsplash.jpg">
+            <img class="repeater-img"
+              src="https://images.unsplash.com/photo-1461175128502-8b13d90ee1ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwxMHx8SVQlMjBzZWN1cml0eXxlbnwwfDB8fHwxNzIzMjI5MDQ0fDA&ixlib=rb-4.0.3&q=80&w=1080">
           </div>
           <div class="flex-item-heading">
             <span class="center">
+              <!-- <h2 class="repeater-heading">CyberSecurity</h2> -->
+            <h2 class="repeater-heading">CyberSec<span class="tht">urity</span></h2>
+            </span>
+          </div>
+          <div class="flex-item-p">
+            <p class="repeater-p">Our IT professionals protect sensitive data and systems from cyber threats, ensure
+              government regulation compliance, and implement proactive measures to safeguard your digital assets and
+              data.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-item">
+          <div class="flex-item-img">
+            <img class="repeater-img"
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyfHxibGFjayUyMGVuZ2luZWVyc3xlbnwwfDB8fHwxNzI1OTkwNjA2fDA&ixlib=rb-4.0.3&q=80&w=1080">
+          </div>
+          <div class="flex-item-heading">
+            <span class="center">
+              <!-- <h2 class="repeater-heading">Training & Support</h2> -->
               <h2 class="repeater-heading"><span class="tht">Training & </span>Support</h2>
             </span>
           </div>
           <div class="flex-item-p">
-            <p>Training is an essential piece of a successful and productive team, and we support and build confidence
+            <p class="repeater-p">Training is an essential piece of a successful and productive team, and we support and
+              build confidence
               through competence.</p>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -224,11 +259,10 @@
   <!-- customer review <div></div>  -->
 
   <footer>
-
     <div class="container">
       <div class="company-info item">
-        <div class="footer-logo">
-          <img id="color-logo-footer" src="/assets/icon/logo-color.svg" width="200dvi" height="200dvi">
+        <div class="logo">
+          <img class="logo-ft" src="/assets/icon/logo-color.svg">
         </div>
         <div id="address">
           <p>
@@ -236,41 +270,37 @@
             1117 State Street #83</br>
             Santa Barbara<br>
             CA 93101</br><br><br>
-            <i class="material-icons">mail</i> <a href="mailto:info@ingenuitytek.com">info@ingenuitytek.com</a>
+            <a href="mailto:info@ingenuitytek.com"><i class="material-icons">mail</i>info@ingenuitytek.com</a>
           </p>
         </div>
       </div>
 
       <div id="contact" class="item" section="#contact">
-          <h1 class="sub-heading">Contact Us</h1>
-          <form class="usr-form">
-            <input name="name" type="text" placeholder="Name" required="true"/>
-            <br>
-            <input name="company" type="text" placeholder="Company Name" required="true"/>
-            <br>
-            <input name="email" type="email" placeholder="Email address" required="true"/>
-            <br>
-            <input name="phone" type="tel" pattern="[0-9]{10}" placeholder="Phone Number"/>
-            <br>
-            <textarea class="message" name="message" placeholder="Message" required="true"></textarea>
-            <br>
-            <br>
-            <span class="center">
-              <button>
-                Submit
-              </button>
-            </span>
-          </form>
+        <h1 class="sub-heading">Contact Us</h1>
+        <form id="usr-form">
+          <input name="name" type="text" placeholder="Name (required)" required="true" /><br>
+          <input name="company" type="text" placeholder="Company Name (required)" required="true" /><br>
+          <input name="email" type="email" placeholder="Email address (required)" required="true" /><br>
+          <input name="phone" type="tel" placeholder="Phone Number" /><br>
+          <textarea class="message" name="message" placeholder="Message" required="true"></textarea><br><br>
+          <button class="btn-submit">Submit</button>
+        </form>
       </div>
     </div>
 
     <br><br><br>
 
-    <div class="copyright">
-      <span>
-        <i class="material-icons">copyright</i>
-        2024 Ingenuity Technology Solutions
-      </span>
+    <div>
+      <div class="legal">
+        <a href="/privacy">Privacy</a>
+      </div>
+
+      <div class="copyright">
+        <span>
+          <i class="material-icons">copyright</i>
+          2024 Ingenuity Technology Solutions, LLC
+        </span>
+      </div>
     </div>
   </footer>
 </body>
