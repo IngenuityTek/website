@@ -151,11 +151,11 @@ footer button:focus {
 }
 
 .logo-ft {
+  /* margin: 50px 0px 0px -10px; */
   width: 45dvw;
   min-width: 200px;
   max-width: 500px;
   height: auto;
-  margin-left: -10px;
 }
 
 .material-icons {
@@ -191,33 +191,35 @@ footer button:focus {
 margin: 5px; */
 }
 
-.base-text {
-  font-size: 130%;
-  margin: 0px 20px;
-}
-
-.image-column {
+.img-col {
   background-image: url("/assets/images/matthieu-beaumont-iYnpYeyu57k-unsplash.jpg");
   background-size: cover;
-  margin: 50px;
+  margin: 50px 100px;
   border-radius: 20px;
 }
 
-.intro-text {
-  font-size: calc(16px + 0.7dvw);
-  justify-content: start;
-  text-align: left;
-  margin-right: 50px;
-  color: rgb(54 65 83);
-}
-
 .intro-heading {
-  font-size: calc(15px + 5.5dvw);
+  font-size: calc(16px + 4.7dvw);
   font-weight: 500;
 }
 
+.base-text {
+  margin: -10px 20px 0px 0px;
+  margin: auto;
+  border: 1px solid;
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff87);
+  backdrop-filter: blur(20px);
+  border-radius: 5px 0px 0px 0px;
+  font-size: calc(16px + 0.5dvw);
+  color: rgb(54 65 83);
+}
+
+/* .intro-text {
+  margin-top: -2px;
+} */
+
 .sub-heading {
-  font-size: calc(16px + 2dvw);
+  font-size: calc(16px + 3dvw);
 }
 
 .parallax {
@@ -283,7 +285,12 @@ margin: 5px; */
 
 .repeater-p {
   text-align: center;
-  font-size: calc(12px + 0.5dvw);
+  font-size: calc(12px + 0.4dvw);
+}
+
+.about-base-text {
+  font-size: 130%;
+  margin: 0px 20px;
 }
 
 /* .arrow-button {
@@ -300,7 +307,7 @@ background: none;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: auto;
   width: 100%;
   color: rgb(21, 49, 64);
 }
@@ -314,7 +321,7 @@ background: none;
   /* padding: 40px 0px; */
 }
 
-#services {
+#services-label {
   padding: 40px 0px;
   margin-bottom: 1dvw;
   border-bottom: 0.5px solid #000000;
@@ -331,7 +338,7 @@ background: none;
   padding: 64px 0px;
 }
 
-#about {
+#about-us {
   display: flex;
   flex-flow: column wrap;
   background-color: #c5c5c5;
@@ -385,7 +392,8 @@ background: none;
 
   input,
   textarea {
-    text-align: justify;
+    text-align: left;
+    align-content: normal;
     inline-size: 70dvw;
   }
 
@@ -437,13 +445,29 @@ justify-content: ;
     transition: 0.4s;
   }
 
-  .intro-text {
-    text-align: center;
-    margin-right: auto;
+  .img-col {
+    display: none;
   }
 
-  .image-column {
-    display: none;
+  .intro-heading {
+    color:#000000;
+  }
+
+  .base-text {
+    font-size: medium;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    padding: 0px 10px;
+    border: none;
+    background-image: linear-gradient(to bottom, #ffffffd5, transparent);
+    color:#000000;
+  }
+
+  .intro-text {
+    padding: 10px;
+    margin: auto;
   }
 
   .container {
@@ -452,6 +476,7 @@ justify-content: ;
 
   .item {
     flex: 100%;
+    align-content: center;
   }
 
   .flex-container {
@@ -506,7 +531,7 @@ justify-content: ;
     display: none;
   }
 
-  .base-text {
+  .about-base-text {
     font-size: medium;
   }
 
