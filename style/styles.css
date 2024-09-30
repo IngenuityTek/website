@@ -187,14 +187,12 @@ footer button:focus {
 
 .item {
   flex: 100%;
-  /* padding: 20px 10px;
-margin: 5px; */
 }
 
 .img-col {
   background-image: url("/assets/images/matthieu-beaumont-iYnpYeyu57k-unsplash.jpg");
   background-size: cover;
-  margin: 50px 100px;
+  margin: 50px;
   border-radius: 20px;
 }
 
@@ -205,7 +203,6 @@ margin: 5px; */
 
 .base-text {
   margin: -10px 20px 0px 0px;
-  margin: auto;
   border: 1px solid;
   background-image: linear-gradient(to bottom, #ffffff, #ffffff87);
   backdrop-filter: blur(20px);
@@ -214,12 +211,8 @@ margin: 5px; */
   color: rgb(54 65 83);
 }
 
-/* .intro-text {
-  margin-top: -2px;
-} */
-
 .sub-heading {
-  font-size: calc(16px + 3dvw);
+  font-size: calc(16px + 2.5dvw);
 }
 
 .parallax {
@@ -339,6 +332,7 @@ background: none;
 }
 
 #about-us {
+  text-align: center;
   display: flex;
   flex-flow: column wrap;
   background-color: #c5c5c5;
